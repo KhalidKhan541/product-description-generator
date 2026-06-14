@@ -1,0 +1,17 @@
+{
+  "name": "product-description-generator",
+  "version": "1.0.0",
+  "description": "AI-powered product description generator for e-commerce platforms",
+  "scripts": {
+    "dev": "npx wrangler pages dev public",
+    "deploy": "npx wrangler pages deploy public --project-name product-description-generator"
+  },
+  "keywords": [
+    "product-description",
+    "ai-generator",
+    "ecommerce",
+    "copywriting"
+  ],
+  "author": "DescGenAI",
+  "license": "MIT"
+}

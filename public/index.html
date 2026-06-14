@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Product Description Generator - Write Product Copy Free</title>
+    <meta name="description" content="Generate compelling product descriptions with AI. Free online tool for Amazon, Shopify, Etsy, and eBay. Multiple formats, bulk generation, and SEO optimization.">
+    <meta name="keywords" content="product description generator, Amazon product description, Shopify product copy, ecommerce writing, product listing, AI copywriter">
+    <meta name="author" content="AI Product Description Generator">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="AI Product Description Generator - Write Product Copy Free">
+    <meta property="og:description" content="Generate compelling product descriptions. Free online tool for Amazon, Shopify, Etsy, and eBay.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://product-description-generator-5z2.pages.dev">
+    <meta property="og:image" content="https://product-description-generator-5z2.pages.dev/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Product Description Generator - Write Product Copy Free">
+    <meta name="twitter:description" content="Generate compelling product descriptions. Free online tool for Amazon, Shopify, Etsy.">
+    <link rel="canonical" href="https://product-description-generator-5z2.pages.dev">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8007430228126096" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">✨</span>
+                    <span class="logo-text">DescGen<span class="logo-accent">AI</span></span>
+                </div>
+                <nav class="nav">
+                    <a href="#generator" class="nav-link">Generator</a>
+                    <a href="#templates" class="nav-link">Templates</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#" class="nav-btn" onclick="toggleBulkMode(); return false;">Bulk Mode</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Generate <span class="gradient-text">Compelling Product Descriptions</span> in Seconds</h1>
+            <p class="hero-subtitle">AI-powered descriptions optimized for Amazon, Shopify, Etsy, eBay & more. Boost your sales with copy that converts.</p>
+        </div>
+    </section>
+
+    <!-- Main Generator -->
+    <section id="generator" class="generator-section">
+        <div class="container">
+            <div class="generator-grid">
+                <!-- Input Panel -->
+                <div class="panel input-panel">
+                    <h2 class="panel-title">Product Details</h2>
+                    
+                    <div class="form-group">
+                        <label for="productName">Product Name *</label>
+                        <input type="text" id="productName" placeholder="e.g., Wireless Bluetooth Headphones" class="form-input" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select id="category" class="form-select">
+                                <option value="">Select category...</option>
+                                <option value="electronics">Electronics & Gadgets</option>
+                                <option value="fashion">Fashion & Clothing</option>
+                                <option value="home">Home & Garden</option>
+                                <option value="beauty">Beauty & Personal Care</option>
+                                <option value="sports">Sports & Outdoors</option>
+                                <option value="toys">Toys & Games</option>
+                                <option value="food">Food & Beverages</option>
+                                <option value="books">Books & Media</option>
+                                <option value="automotive">Automotive</option>
+                                <option value="pet">Pet Supplies</option>
+                                <option value="health">Health & Wellness</option>
+                                <option value="jewelry">Jewelry & Accessories</option>
+                                <option value="custom">Custom</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="targetAudience">Target Audience</label>
+                            <select id="targetAudience" class="form-select">
+                                <option value="">Select audience...</option>
+                                <option value="general">General Consumers</option>
+                                <option value="professionals">Professionals</option>
+                                <option value="tech-savvy">Tech-Savvy Buyers</option>
+                                <option value="budget-conscious">Budget-Conscious Shoppers</option>
+                                <option value="luxury">Luxury Buyers</option>
+                                <option value="young-adults">Young Adults (18-30)</option>
+                                <option value="parents">Parents</option>
+                                <option value="seniors">Seniors</option>
+                                <option value="fitness">Fitness Enthusiasts</option>
+                                <option value="eco-conscious">Eco-Conscious Consumers</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="keyFeatures">Key Features (one per line)</label>
+                        <textarea id="keyFeatures" placeholder="Active noise cancellation&#10;40-hour battery life&#10;Bluetooth 5.0&#10;Foldable design&#10;Built-in microphone" class="form-textarea" rows="5"></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tone">Tone</label>
+                            <select id="tone" class="form-select">
+                                <option value="professional">Professional</option>
+                                <option value="fun">Fun & Playful</option>
+                                <option value="luxury">Luxury & Premium</option>
+                                <option value="budget">Budget-Friendly</option>
+                                <option value="informative">Informative</option>
+                                <option value="urgent">Urgency/Scarcity</option>
+                                <option value="emotional">Emotional</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="platform">Platform</label>
+                            <select id="platform" class="form-select">
+                                <option value="generic">Generic</option>
+                                <option value="amazon">Amazon</option>
+                                <option value="shopify">Shopify</option>
+                                <option value="etsy">Etsy</option>
+                                <option value="ebay">eBay</option>
+                                <option value="walmart">Walmart</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="facebook">Facebook</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="price">Price (optional)</label>
+                            <input type="text" id="price" placeholder="$49.99" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="brand">Brand (optional)</label>
+                            <input type="text" id="brand" placeholder="Your brand name" class="form-input">
+                        </div>
+                    </div>
+
+                    <button class="btn-generate" onclick="generateDescription()" id="generateBtn">
+                        <span class="btn-icon">✨</span>
+                        <span class="btn-text">Generate Description</span>
+                        <span class="btn-loading" style="display:none;">Generating...</span>
+                    </button>
+                </div>
+
+                <!-- Output Panel -->
+                <div class="panel output-panel" id="outputPanel" style="display:none;">
+                    <div class="output-header">
+                        <h2 class="panel-title">Generated Descriptions</h2>
+                        <div class="output-actions">
+                            <button class="btn-sm btn-copy" onclick="copyAllDescriptions()" title="Copy All">📋 Copy All</button>
+                            <button class="btn-sm btn-save" onclick="saveToFavorites()" title="Save to Favorites">💾 Save</button>
+                        </div>
+                    </div>
+
+                    <div class="output-tabs">
+                        <button class="output-tab active" onclick="switchOutputTab('short', this)">Short</button>
+                        <button class="output-tab" onclick="switchOutputTab('full', this)">Full</button>
+                        <button class="output-tab" onclick="switchOutputTab('bullets', this)">Bullets</button>
+                        <button class="output-tab" onclick="switchOutputTab('seo', this)">SEO Meta</button>
+                        <button class="output-tab" onclick="switchOutputTab('title', this)">Titles</button>
+                        <button class="output-tab" onclick="switchOutputTab('social', this)">Social</button>
+                    </div>
+
+                    <div class="output-content">
+                        <div class="output-item active" id="output-short">
+                            <div class="output-label">Short Description (1-2 sentences)</div>
+                            <div class="output-text" id="text-short"></div>
+                            <button class="btn-copy-single" onclick="copyToClipboard('text-short')">📋 Copy</button>
+                        </div>
+                        <div class="output-item" id="output-full">
+                            <div class="output-label">Full Description (Paragraph)</div>
+                            <div class="output-text" id="text-full"></div>
+                            <button class="btn-copy-single" onclick="copyToClipboard('text-full')">📋 Copy</button>
+                        </div>
+                        <div class="output-item" id="output-bullets">
+                            <div class="output-label">Bullet Points</div>
+                            <div class="output-text" id="text-bullets"></div>
+                            <button class="btn-copy-single" onclick="copyToClipboard('text-bullets')">📋 Copy</button>
+                        </div>
+                        <div class="output-item" id="output-seo">
+                            <div class="output-label">SEO Meta Description (150-160 chars)</div>
+                            <div class="output-text" id="text-seo"></div>
+                            <div class="char-count" id="seoCharCount"></div>
+                            <button class="btn-copy-single" onclick="copyToClipboard('text-seo')">📋 Copy</button>
+                        </div>
+                        <div class="output-item" id="output-title">
+                            <div class="output-label">Product Titles</div>
+                            <div class="output-text" id="text-title"></div>
+                            <button class="btn-copy-single" onclick="copyToClipboard('text-title')">📋 Copy</button>
+                        </div>
+                        <div class="output-item" id="output-social">
+                            <div class="output-label">Social Media Captions</div>
+                            <div class="output-text" id="text-social"></div>
+                            <button class="btn-copy-single" onclick="copyToClipboard('text-social')">📋 Copy</button>
+                        </div>
+                    </div>
+
+                    <button class="btn-regenerate" onclick="generateDescription()">🔄 Regenerate</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bulk Mode Modal -->
+    <div class="modal" id="bulkModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Bulk Generation Mode</h2>
+                <button class="modal-close" onclick="toggleBulkMode()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">Paste one product per line. Format: Product Name | Category | Features</p>
+                <textarea id="bulkInput" class="form-textarea" rows="10" placeholder="Wireless Headphones | Electronics | noise cancellation,40hr battery&#10;Running Shoes | Sports | lightweight,waterproof&#10;Organic Coffee | Food | fair trade,arabica beans"></textarea>
+                <div class="bulk-actions">
+                    <button class="btn-generate" onclick="processBulk()">✨ Generate All</button>
+                    <button class="btn-secondary" onclick="exportBulk()">📥 Export CSV</button>
+                </div>
+                <div id="bulkResults" style="display:none;">
+                    <h3>Results</h3>
+                    <div id="bulkOutput"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Templates Section -->
+    <section id="templates" class="templates-section">
+        <div class="container">
+            <h2 class="section-title">Category Templates</h2>
+            <p class="section-subtitle">Pre-built templates optimized for each product category</p>
+            <div class="templates-grid">
+                <div class="template-card" onclick="loadTemplate('electronics')">
+                    <div class="template-icon">📱</div>
+                    <h3>Electronics</h3>
+                    <p>Tech specs, features, benefits</p>
+                </div>
+                <div class="template-card" onclick="loadTemplate('fashion')">
+                    <div class="template-icon">👗</div>
+                    <h3>Fashion</h3>
+                    <p>Style, comfort, occasions</p>
+                </div>
+                <div class="template-card" onclick="loadTemplate('home')">
+                    <div class="template-icon">🏠</div>
+                    <h3>Home & Garden</h3>
+                    <p>Durability, aesthetics, utility</p>
+                </div>
+                <div class="template-card" onclick="loadTemplate('beauty')">
+                    <div class="template-icon">💄</div>
+                    <h3>Beauty</h3>
+                    <p>Ingredients, results, routines</p>
+                </div>
+                <div class="template-card" onclick="loadTemplate('sports')">
+                    <div class="template-icon">⚽</div>
+                    <h3>Sports</h3>
+                    <p>Performance, durability, comfort</p>
+                </div>
+                <div class="template-card" onclick="loadTemplate('food')">
+                    <div class="template-icon">🍔</div>
+                    <h3>Food & Beverage</h3>
+                    <p>Taste, quality, origin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Favorites Section -->
+    <section id="favorites" class="favorites-section">
+        <div class="container">
+            <div class="favorites-header">
+                <h2 class="section-title">Saved Favorites</h2>
+                <button class="btn-secondary" onclick="clearFavorites()">🗑️ Clear All</button>
+            </div>
+            <div id="favoritesList" class="favorites-grid">
+                <p class="empty-state">No saved descriptions yet. Generate and save your favorites!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <h2 class="section-title">Simple, Transparent Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-badge">Free</div>
+                    <h3 class="pricing-price">$0</h3>
+                    <p class="pricing-period">Forever</p>
+                    <ul class="pricing-features">
+                        <li>5 generations per day</li>
+                        <li>Basic templates</li>
+                        <li>Copy to clipboard</li>
+                        <li>All output formats</li>
+                    </ul>
+                    <button class="btn-pricing">Get Started Free</button>
+                </div>
+                <div class="pricing-card pricing-featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <h3 class="pricing-price">$15</h3>
+                    <p class="pricing-period">/month</p>
+                    <ul class="pricing-features">
+                        <li>Unlimited generations</li>
+                        <li>All premium templates</li>
+                        <li>Bulk generation</li>
+                        <li>SEO optimization</li>
+                        <li>Priority support</li>
+                        <li>Export to CSV</li>
+                    </ul>
+                    <button class="btn-pricing btn-featured">Start Pro Trial</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-badge">Enterprise</div>
+                    <h3 class="pricing-price">$49</h3>
+                    <p class="pricing-period">/month</p>
+                    <ul class="pricing-features">
+                        <li>Everything in Pro</li>
+                        <li>API access</li>
+                        <li>Custom templates</li>
+                        <li>Team collaboration</li>
+                        <li>Dedicated support</li>
+                        <li>White-label option</li>
+                    </ul>
+                    <button class="btn-pricing">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AdSense Placeholder -->
+    <div class="adsense-container">
+        <div class="adsense-placeholder">
+            <span>Advertisement</span>
+            <div class="adsense-box">
+                <!-- AdSense Ad Unit -->
+                <!-- <ins class="adsbygoogle" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins> -->
+                <span class="adsense-text">Ad Space — 728x90</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">✨</span>
+                    <span class="logo-text">DescGen<span class="logo-accent">AI</span></span>
+                    <p>AI-powered product descriptions that convert.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Product</h4>
+                        <a href="#generator">Generator</a>
+                        <a href="#templates">Templates</a>
+                        <a href="#pricing">Pricing</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <a href="#">Blog</a>
+                        <a href="#">API Docs</a>
+                        <a href="#">Support</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Refund</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DescGenAI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
